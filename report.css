@@ -1,0 +1,357 @@
+
+.items{
+    padding-top: 100px;
+    margin-left: -1ch;
+    height: 800px;
+    background-color: white;
+    /* border-right:1px solid #ff9d00; */
+}
+.items li{
+    width: 100%;
+    height: 50px;
+}
+.items li:hover{
+    background-color: #ff9d00;
+}
+.items a{
+    font-size: 25px;
+     display: block;
+     height: 50px;
+     width: 100%;
+     color: #ff9d00;
+    text-decoration: none;
+    padding-left: 50px;
+    letter-spacing: 3px;
+}
+.items a img{
+    width: 30px;
+    height: 30px;
+}
+.items a:hover{
+    color: white;
+    text-decoration: none;
+    background-color: #ff9d00;
+}
+.items ul{
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.items  a{
+  font: 22px/1.5 tahoma, arial, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
+  font-weight: 700;
+
+}
+#name{
+    color: #ff9d00;
+  font: 20px/1.5 tahoma, arial, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
+
+}
+.main{
+    border-left:1px solid #ff9d00;
+    margin-left: -12px;
+    padding-right: 0px;
+    background-color: white;
+    /* padding-left: 0; */
+}
+.header{
+    background-color: white;
+    height: 120px;
+    border-bottom: 1px solid #ff9d00;
+}
+.toux img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin-top: 10px;
+}
+.info p{
+    font-size: 20px;
+    margin-top: 66px;
+    color: black;
+}
+.items1{
+    height: 45px;
+    border-bottom: 1px solid #ff9d00;
+    background-color: white;
+}
+.items1 p{
+    width: 130px;
+    height: 45px;
+    font-size: 25px;
+    color: #ff9d00;
+    background-color: white;
+   margin-left: 145px;
+   border-bottom:1px solid #ff9d00;
+}
+.items1 .current{
+    color: white;
+    background-color: #ff9d00;
+}
+.item{
+    display: none;
+}
+.object{
+    position: relative;
+    display: block;
+    height: 640px;
+    overflow: scroll;
+}
+.btns button{
+    border: 1px solid red;
+    background-color: white;
+    color: red;
+    margin-top: 15px;
+    height: 35px;
+    width: 100px;
+    border-radius: 7px
+}
+.object .addobj{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    margin-left: 250px;
+    width: 600px;
+    height: auto;
+    background-color:rgb(213, 210, 208);
+    border: 1px solid red;
+    border-radius: 10px;
+}
+.object form{
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 115px;
+    color: white;
+}
+.object form label{
+    margin-top: 10px;
+}
+.object form #formFileSm{
+    font-size: 20px;
+    color: white;
+    width: 330px;
+}
+.object form .btn{
+    width: 120px;
+    height: 40px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color: white;
+    margin-left: 40px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.btns button:hover{
+    background-color: #ff9d00;
+    color: white;
+}
+.object img{
+    width: 99%;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.now{
+    border: 1px solid #ff1493;
+}
+.lins button{
+    display: none;
+    position: absolute;
+    width: 221px;
+    height: 40px;
+    z-index: 666;
+    top: 293px;
+    left: 12px;
+    background-color: red;
+    color: white;
+    font-size: 20px;
+    border: 1px solid white;
+}
+.lins div{
+    position: relative;
+    margin-top: 20px;
+    border: 1px solid white;
+    border-top: none;
+    background-color: #f1fbff;
+}
+.attention{
+    background-color: white;
+}
+.peo{
+    height: 130px;
+    border-bottom:1px solid #ff9d00;
+    background-color: #f1fbff;
+}
+.peo img{
+    margin-top: 10px;
+    height: 100px;
+    width: 100px;
+    border-radius: 50px;
+}
+.peo p{
+    font-size: 20px;
+    margin-top: 25px;
+}
+.peo .cancle{
+    height: 35px;
+    width: 80px;
+    background-color: red;
+    text-align: center;
+    color: white;
+    border-radius: 5px;
+    padding-top: 5px;
+    margin-top: 45px;
+}
+.own{
+    position: relative;
+}
+.own label{
+    font-size: 25px;
+    color:black;
+    margin-bottom: 20px;
+}
+.own .tx{
+    padding-top: 20px;
+    font-size: 25px;
+    color:black;
+}
+.own img{
+    width: 100px;
+    height: 100px;
+}
+.own .bt{
+    width: 500px;
+    height: 50px;
+    background-color: #f1fbff;
+    color: rgb(220, 30, 30);
+    border-radius: 7px;
+    font-size: 25px;
+    border: 1px solid rgb(220, 30, 30);
+    margin-top: 10px;
+    text-align: center;
+    margin-left: 10px;
+}
+.setbox{
+    display: none;
+    position: absolute;
+    z-index: 999;
+    margin-left: 250px;
+    margin-top: -620px;
+    width: 600px;
+    height: auto;
+    background-color:#ff9d00;
+    border: 1px solid #ff9d00;
+    border-radius: 10px;
+}
+.setbox form{
+    margin-top: 20px;
+    
+}
+.setbox form label{
+    font-size: 20px;
+    color: white;
+    margin-left: 130px;
+}
+.setbox input{
+    height: 30px;
+    width: 200px;
+}
+.setbox .btn{
+    margin-left: 120px;
+    padding-bottom: 40px;
+}
+.own .ok{
+    width: 150px;
+}
+.own .no{
+    width: 150px;
+}
+.footer{
+    background-color: rgb(186, 183, 183);
+    margin-top: 70px;
+}
+.footer .items-footer{
+    text-align: center;
+    background-color: rgb(252, 144, 162);
+    display: flex;
+    list-style:none;
+
+}
+.footer .items-footer a{
+    border-right: 2px solid #fff;
+    padding: 1px 10px;
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+
+}
+.footer .items-footer .firstli{
+    margin-left: 622px;
+}
+.footer .items-footer .lastli a{
+    border-right: 0;
+}
+.footer div{
+    color: white;
+    font-size: 13px;
+    margin-bottom: 6px;
+    margin-left:750px;
+}
+@media screen and (max-width:791px) {
+    .info00{
+        display: none;
+    }
+}
+/*聊天框的样式设置*/
+#box{
+    width:600px;
+    height:500px;
+    margin:50px auto;
+    border:1px solid #ff9d00;
+}
+.talk_show{
+    width:590px;
+    height:420px;
+    margin:8px auto;
+    border:1px solid #ff9d00;
+    overflow:auto;
+}
+.talk_input{
+    width:580px;
+    margin:10px auto;
+}
+.talk_word{
+    width:420px;
+    height:26px;
+    margin-left:6px;
+    float:left;
+    border:1px solid #ff9d00;
+}
+.talk_sub{
+    width:56px;
+    height:30px;
+    border:1px solid #ff9d00;
+    border-radius:30px;
+}
+.atalk{
+    margin:10px;
+}
+.atalk span{
+    background:#ff9d00;
+    border-radius:30px;
+    display:inline-block;
+    padding:5px 10px;
+    color: white;
+}
+.btalk{
+    margin:10px;
+    text-align:right
+}
+.btalk span{
+    background:#ff9d00;
+    border-radius:30px;
+    display:inline-block;
+    padding:5px 10px;
+    color: white;
+}

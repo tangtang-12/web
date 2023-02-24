@@ -1,0 +1,239 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.top{
+    height: 72px;
+    border-bottom: 2px solid #ff9d00;
+}
+.mark{
+    height: 70px;
+    font: Italic bold 23px "微软雅黑";
+    line-height: 70px;
+    color: #ff9d00;
+    background-color: #fff;
+}
+.mark img{
+    width: 33px;
+    height: 33px;
+}
+.touxiang{
+    height: 55px;
+    line-height: 72px;
+    font-size: 12px;
+    color: grey;
+}
+.touxiang img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.search-1{
+    margin-top: 20px;
+}
+
+.s-input {
+    width: 800px;
+    padding-left: 10px;
+    border-radius: 0.625rem;
+    border: 2px solid #ff9d00;
+  }
+  input:focus{
+    outline: none;
+  }
+  .s-btn {
+    border: none;
+    height: 30px;
+    margin-left: 2px;
+    border-radius: 0.625rem;
+    background-color: #ff9d00;
+  }
+  .search {
+    display: flex;
+    margin-left: 300px;
+  }
+.footmark-title{
+    margin-top: 30px;
+    color: #ff9d00;
+    font-size: 19px;
+    font-weight: 550;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+    padding-bottom: 10px;
+}
+.footmark-title em{
+    border-bottom: 3px solid #ff9d00;
+    padding-bottom: 10px;
+}
+.footmark-title .delete{
+    float: right;
+}
+.footmark-title .delete a{
+    color: #999;
+    font-size: 17px;
+    text-decoration: none;
+}
+.footmark-title .delete a:hover{
+    color: #ff9d00;
+    cursor: pointer;
+}
+.item{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.082);
+}
+.item .date{
+    margin-top: 10px;
+}
+.item .date a{
+    float: right;
+    color: #999;
+    font-size: 16px;
+    text-decoration: none;
+}
+.item .date a:hover{
+    color: #ff9d00;
+    cursor: pointer;
+}
+.card{
+    padding: 0;
+    height: 300px;
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+.pic{
+    height: 70%;
+}
+.card .old{
+    font-size: 12px;
+}
+.card i{
+    display: none;
+    float: right;
+}
+.card:hover i{
+    display: inline-block;
+    cursor: pointer;
+}
+.card i:hover{
+    color: #ff9d00;
+}
+.footer{
+    margin-top: 30px;
+}
+.footer .nav-footer{
+    text-align: center;
+    background-color: #ff9d00;
+    display: flex;
+}
+.footer .nav-footer a{
+    text-decoration: none;
+    border-right: 2px solid #fff;
+    padding: 1px 10px;
+    color: #fff;
+    font-size: 12px;
+}
+.footer .nav-footer li{
+    list-style: none;
+}
+.footer .nav-footer .firstli{
+    margin-left: 250px;
+}
+.footer .nav-footer .lastli a{
+    border-right: 0;
+}
+.footer div{
+    color: #ccc;
+    font-size: 12px;
+    margin-bottom: 6px;
+}
+
+.background-1{
+    display: none;
+    margin-top: 50px;
+    color: pink;
+    font-size: 30px;
+}
+.card-text{
+    color: #ff9d00;
+}
+.background-1 .nothing-1 img{
+    margin-left: 100px;
+    width: 300px;
+    height: 300px;
+}
+.background-1 .nothing-1 a{
+    color: pink;
+    text-decoration: none;
+}
+.background-1 .nothing-1 a:hover{
+    color: #ff9d00;
+}
+@media screen and (max-width:1199px){
+    .footer .nav-footer .firstli{
+        margin-left: 150px;
+    }
+    .item .card{
+        margin-left: 25px;
+    }
+    .background-1{
+        font-size: 25px;
+    }
+    .background-1 .nothing-1 img{
+        margin-left: 50px;
+        width: 250px;
+        height: 250px;
+    }
+}
+@media screen and (max-width:991px) {
+    .footer .nav-footer .firstli{
+        margin-left: 60px;
+    }
+    .item .card{
+        width: 10rem!important;
+        margin-left: 15px;
+        height: 230px;
+    }
+    .pic{
+        height: 67%;
+    }
+    .card-title{
+        font-size: 17px;
+    }
+    .background-1{
+        font-size: 19px;
+    }
+    .background-1 .nothing-1 img{
+        margin-left: 50px;
+        width: 230px;
+        height: 230px;
+    }
+}
+@media screen and (max-width:767px) {
+    .footer{
+        display: none;
+    }
+    .background-1 span{
+        display: none;
+    }
+    .background-1 a{
+        font-size: 25px;
+    }
+
+}
+@media screen and (max-width:541px) {
+    .item .card{
+        width: 9rem!important;
+        margin-left: 15px;
+        height: 210px;
+    }
+    .card-title, .card-text{
+        font-size: 15px;
+    }
+    .card .old{
+        font-size: 10px;
+    }
+    .pic{
+        height: 63%;
+    }
+    .search-1{
+        display: none;
+    }
+}

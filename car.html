@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- [if lt IE 9]>
+      <script src="https://cdn.jsdelivr.cn/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.cn/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif] -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!-- Bootstrap 的 CSS 文件 -->
+    <link rel="stylesheet" href="bootstrap_car/bootstrap/css/bootstrap.min.css">
+    <title>购物车</title>
+    <link rel="stylesheet" href="cartstyle.css">
+    <script src="jquery.min.js"></script>
+    <script src="car.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="top clearfix row">
+            <div class="mark col-lg-4 col-sm-4"><img src="images/logo.png" alt="" id="image"> 五 福 </div>
+            <script>
+                document.getElementById("image").onclick=function(){
+                    location.href="index.html";
+
+                }
+            </script>
+            <style>
+                #image{
+                    cursor: pointer;
+                }
+            </style>
+            <div class="touxiang col-md-2"><img src="images/head.jpg" alt=""> <span>你好啊！</span></div>
+            <ul class="nav-items col-md-5 col-md-offset-1 col-sm-7 col-sm-offset-1 col-xs-4 col-xs-offset-2">
+                <li class="menu visible-xs"><a href="#"><span class="glyphicon glyphicon-list"></span> 更多</a>
+                    <div>
+                        <a href="我的订单">我的订单</a>
+                        <a href="企业采购">企业采购</a>
+                        <a href="关注二手购物">关注二手购物</a>
+                        <a href="客户服务">客户服务</a>
+                    </div>
+                </li>
+                <li class="hidden-xs"><a href="我的订单">我的订单</a></li>
+                <li class="hidden-xs"><a href="企业采购">企业采购</a></li>
+                <li class="hidden-xs"><a href="关注二手购物">关注二手购物</a></li>
+                <li class="menu hidden-xs"><a href="客户服务">客户服务</a>
+                    <div>
+                        <a href="联系客服">联系客服</a>
+                        <a href="帮助中心">帮助中心</a>
+                        <a href="购物反馈">购物反馈</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="cart-title">
+            <em>全部商品</em>
+        </div>
+        <!-- 购物车主要核心区域 -->
+        <div class="cart-wrap">
+            <!-- 头部全选模块 -->
+            <div class="cart-head row hidden-xs">
+                <div class="t-checkbox col-sm-1 hidden-xs">
+                    <input type="checkbox" name="" id="" class="checkall"> 全选
+                </div>
+                <div class="t-goods col-sm-4">商品</div>
+                <div class="t-price col-sm-2">单价</div>
+                <div class="t-num col-sm-2">数量</div>
+                <div class="t-sum col-sm-2 hidden-xs">小计</div>
+                <div class="t-action col-sm-1 hidden-xs">操作</div>
+            </div>
+            
+            <!-- 商品详细模块 -->
+            <div class="cart-items">
+                <div class="cart-item check-cart-item row check-cart-item">
+                    <div class="p-checkbox col-sm-1 col-xs-1">
+                        <input type="checkbox" name="" id="" checked class="j-checkbox">
+                    </div>
+                    <div class="p-goods col-sm-4 col-xs-6">
+                        <div class="p-img">
+                            <img src="images/mj.jpg" alt="">
+                        </div>
+                        <div class="p-msg"> 墨镜女太阳镜女防紫外线太阳眼镜女男开车专用墨镜男潮太阳镜女<p>尺码：均码</p></div>
+                    </div>
+                    <div class="p-price col-sm-2 col-xs-2">￥79</div>
+                    <div class="p-num  col-sm-2 col-xs-3">
+                        <div class="quantity-form">
+                            <a href="javascript:;" class="decrement"> -</a>
+                            <input type="text" class="itxt" value="1">
+                            <a href="javascript:;" class="increment">+</a>
+                        </div>
+                    </div>
+                    <div class="p-sum col-sm-2 hidden-xs">￥79</div>
+                    <div class="p-action col-sm-1 hidden-xs"><a href="javascript:;">删除</a></div>
+                </div>
+                <div class="cart-item row check-cart-item">
+                    <div class="p-checkbox col-sm-1 col-xs-1">
+                        <input type="checkbox" name="" id="" checked class="j-checkbox">
+                    </div>
+                    <div class="p-goods col-sm-4  col-xs-6">
+                        <div class="p-img">
+                            <img src="images/tx.jpg" alt="">
+                        </div>
+                        <div class="p-msg">踩屎感拖鞋女夏户外韩版男女沙滩鞋室内防滑EVA女士凉拖鞋外穿男<p>尺码：36-37</p></div>
+                    </div>
+                    <div class="p-price col-sm-2 col-xs-2">￥19.9</div>
+                    <div class="p-num col-sm-2 col-xs-3">
+                        <div class="quantity-form">
+                            <a href="javascript:;" class="decrement">-</a>
+                            <input type="text" class="itxt" value="1">
+                            <a href="javascript:;" class="increment">+</a>
+                        </div>
+                    </div>
+                    <div class="p-sum col-sm-2 hidden-xs">￥19.9</div>
+                    <div class="p-action col-sm-1 hidden-xs"><a href="javascript:;">删除</a></div>
+                </div>
+
+                <div class="cart-item row check-cart-item">
+                    <div class="p-checkbox col-sm-1 col-xs-1">
+                        <input type="checkbox" name="" id="" checked class="j-checkbox">
+                    </div>
+                    <div class="p-goods col-sm-4  col-xs-6">
+                        <div class="p-img">
+                            <img src="images/wywt.jpg" alt="">
+                        </div>
+                        <div class="p-msg">适合四季穿的卫衣<p>尺码：M</p></div>
+                    </div>
+                    <div class="p-price col-sm-2 col-xs-2">￥99</div>
+                    <div class="p-num col-sm-2 col-xs-3">
+                        <div class="quantity-form">
+                            <a href="javascript:;" class="decrement">-</a>
+                            <input type="text" class="itxt" value="1">
+                            <a href="javascript:;" class="increment">+</a>
+                        </div>
+                    </div>
+                    <div class="p-sum col-sm-2 hidden-xs">￥99</div>
+                    <div class="p-action col-sm-1 hidden-xs"><a href="javascript:;">删除</a></div>
+                </div>
+
+                <div class="cart-item row check-cart-item">
+                    <div class="p-checkbox col-sm-1 col-xs-1">
+                        <input type="checkbox" name="" id="" checked class="j-checkbox">
+                    </div>
+                    <div class="p-goods col-sm-4 col-xs-6">
+                        <div class="p-img">
+                            <img src="images/wj.jpg" alt="">
+                        </div>
+                        <div class="p-msg">羊毛围巾女100%绵羊毛纯色百搭加厚保暖披肩情侣款<p>尺码：200cm*35cm（含流苏）</p></div>
+                    </div>
+                    <div class="p-price col-sm-2 col-xs-2">￥59.99</div>
+                    <div class="p-num  col-sm-2 col-xs-3">
+                        <div class="quantity-form">
+                            <a href="javascript:;" class="decrement">-</a>
+                            <input type="text" class="itxt" value="1">
+                            <a href="javascript:;" class="increment">+</a>
+                        </div>
+                    </div>
+                    <div class="p-sum col-sm-2 hidden-xs">￥59.99</div>
+                    <div class="p-action col-sm-1 hidden-xs"><a href="javascript:;">删除</a></div>
+                </div>
+
+                <div class="cart-item row check-cart-item">
+                    <div class="p-checkbox col-sm-1 col-xs-1">
+                        <input type="checkbox" name="" id="" checked class="j-checkbox">
+                    </div>
+                    <div class="p-goods col-sm-4 col-xs-6">
+                        <div class="p-img">
+                            <img src="images/mtx.jpg" alt="">
+                        </div>
+                        <div class="p-msg">棉拖鞋女冬季可外穿情侣厚底防滑可爱室内居家毛绒保暖棉鞋男<p>尺码：39-40</p>
+                        </div>
+                    </div>
+                    <div class="p-price col-sm-2  col-xs-2">￥25</div>
+                    <div class="p-num col-sm-2 col-xs-3">
+                        <div class="quantity-form">
+                            <a href="javascript:;" class="decrement">-</a>
+                            <input type="text" class="itxt" value="1">
+                            <a href="javascript:;" class="increment">+</a>
+                        </div>
+                    </div>
+                    <div class="p-sum col-sm-2 hidden-xs">￥25</div>
+                    <div class="p-action col-sm-1 hidden-xs"><a href="javascript:;">删除</a></div>
+                </div>
+
+                <div class="cart-item row check-cart-item">
+                    <div class="p-checkbox col-sm-1 col-xs-1">
+                        <input type="checkbox" name="" id="" checked class="j-checkbox">
+                    </div>
+                    <div class="p-goods col-sm-4 col-xs-6">
+                        <div class="p-img">
+                            <img src="images/xfs.jpg" alt="">
+                        </div>
+                        <div class="p-msg">小风扇usb可充电手持学生宿舍办公室桌面床上用随身迷你电扇<p>尺码：升级充电款</p></div>
+                    </div>
+                    <div class="p-price col-sm-2 col-xs-2">￥10</div>
+                    <div class="p-num col-sm-2 col-xs-3">
+                        <div class="quantity-form">
+                            <a href="javascript:;" class="decrement">-</a>
+                            <input type="text" class="itxt" value="1">
+                            <a href="javascript:;" class="increment">+</a>
+                        </div>
+                    </div>
+                    <div class="p-sum col-sm-2 hidden-xs">￥10</div>
+                    <div class="p-action col-sm-1 hidden-xs"><a href="javascript:;">删除</a></div>
+                </div>
+
+                <div class="cart-item row check-cart-item">
+                    <div class="p-checkbox col-sm-1 col-xs-1">
+                        <input type="checkbox" name="" id="" checked class="j-checkbox">
+                    </div>
+                    <div class="p-goods col-sm-4  col-xs-6">
+                        <div class="p-img">
+                            <img src="images/lyj.jpg" alt="">
+                        </div>
+                        <div class="p-msg">现代简约室内,阳台晾衣架落地加厚不锈钢双杆晾衣架<p>尺码：1.4米简约</p></div>
+                    </div>
+                    <div class="p-price col-sm-2 col-xs-2">￥35</div>
+                    <div class="p-num col-sm-2 col-xs-3">
+                        <div class="quantity-form">
+                            <a href="javascript:;" class="decrement">-</a>
+                            <input type="text" class="itxt" value="1">
+                            <a href="javascript:;" class="increment">+</a>
+                        </div>
+                    </div>
+                    <div class="p-sum col-sm-2 hidden-xs">￥35</div>
+                    <div class="p-action col-sm-1 hidden-xs"><a href="javascript:;">删除</a></div>
+                </div>
+
+                <!-- 结算模块 -->
+                <div class="cart-end row">
+                    <div class="select-all col-sm-2 col-xs-2">
+                        <input type="checkbox" name="" id="" class="checkall"> 全选
+                    </div>
+                    <div class="operation col-sm-3 col-xs-3">
+                        <a href="javascript:;" class="remove-selected">删除选中</a>
+                        <a href="javascript:;" class="clean-all">清理购物车</a>
+                    </div>
+                    <div class="pay col-sm-5 col-xs-4">
+                        <div class="amount-sum">已选商品件数：<em> 1<em></div>
+                        <div class="price-sum"> 总价：<em>￥ 0<em></div>
+                    </div>
+                    <button class="btn-area col-sm-2 col-xs-3">结 算</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer row">
+            <div class="first-1">
+                <ul class="nav-footer">
+                    <li class="firstli"><a href="#">关于我们</a></li>
+                    <li><a href="开放平台">开放平台</a></li>
+                    <li><a href="网站合作">网站合作</a></li>
+                    <li><a href="隐私权政策">隐私权政策</a></li>
+                    <li><a href="服务条款">服务条款</a></li>
+                    <li><a href="知识产权">知识产权</a></li>
+                    <li><a href="平台规则">平台规则</a></li>
+                    <li class="lastli"><a href="规则意见征集">规则意见征集</a></li>
+                </ul>
+            </div>
+            
+            <div class="text-center">经营许可证：100-200-300</div>
+            <div class="text-center">正品保真许可证：1234567890</div>
+            <div class="text-center">五成新以上许可证：300-200-100</div>
+            <div class="text-center">违法和不良信息举报电话：4006789888 </div>
+            <div class="text-center">互联网信息服务资格证书：1000-2000</div>
+            <div class="text-center">2021-2022校园二手平台版权所有</div>
+        </div>
+    </div>
+</body>
+
+</html>

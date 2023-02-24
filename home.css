@@ -1,0 +1,137 @@
+body {
+  font: 18px/1.5 tahoma, arial, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
+}
+input:focus {
+  outline: none;
+}
+.s-input {
+  width: 400px;
+  padding-left: 10px;
+  border-radius: 0.625rem;
+  border: 2px solid #ff9d00;
+}
+.s-btn {
+  border: none;
+  height: 35px;
+  margin-left: 2px;
+  border-radius: 0.625rem;
+  background-color: #ff9d00;
+}
+.search {
+  display: flex;
+  margin-left: 300px;
+}
+a {
+  cursor: pointer;
+  color: #333333;
+  text-decoration: none;
+}
+a:hover {
+  color: #ff9d00;
+}
+.n-link {
+  padding: 10px;
+}
+.item,
+.item-section {
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+}
+.carousel-item img {
+  margin-left: 0;
+  border-radius: 8px;
+}
+.command {
+  margin-top: 10px;
+}
+.nav-section,
+.devide {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.nav-section {
+  padding: 5px 0px;
+  border-radius: 12px 12px 0px 0px;
+}
+.nav-play {
+  border-radius: 12px;
+  padding: 5px 0px;
+}
+.devide,
+.nav-play,
+.nav-section,
+.n-right,
+.d-right {
+  background-color: #f3f3f3;
+}
+.devide {
+  padding-top: 5px;
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  border-radius: 0 0 12px 12px;
+}
+.devide li {
+  height: 20px;
+  width: 212px;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  position: relative;
+  margin-bottom: 18px;
+}
+span {
+  height: 20px;
+  overflow: hidden;
+  width: 7px;
+  padding: 0 8px;
+}
+li img {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 12px;
+}
+.d-right {
+  padding: 10px;
+  border-radius: 12px 12px 0px 0px;
+}
+.n-right {
+  padding: 0;
+  border-radius: 0 0 12px 12px;
+}
+.u-section {
+  font-size: 14px;
+}
+.user {
+  margin-top: 20px;
+}
+.title {
+  font-size: 24px;
+  margin-left: 10px;
+}
+.s-info {
+  display: inline;
+}
+.price {
+  font-size: 22px;
+  color: #ff5000;
+  line-height: 22px;
+  margin-top: 25%;
+  display: inline-block;
+}
+.s-card {
+  padding: 10px;
+  border: 10px;
+  border-radius: 10px;
+}
+.s-card:hover {
+  color: #333333;
+  background-color: #f3f3f3;
+
+  border: 1px solid #ff9d00;
+}
+p {
+  font: 14px/1.5 tahoma, arial, "Hiragino Sans GB", "\5b8b\4f53", sans-serif;
+}
